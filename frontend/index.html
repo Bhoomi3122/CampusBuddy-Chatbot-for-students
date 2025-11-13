@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Campus Buddy - Your AI Assistant</title>
+  </head>
+  <body>
+    <div class="chat-container">
+      <!-- Header -->
+      <header class="chat-header">
+        <div class="header-left">
+          <img src="./assets/logo.png" alt="Campus Buddy Logo" class="logo" />
+          <div class="header-info">
+            <h4>Campus Buddy</h4>
+            <span class="status-indicator">● Online</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Chat Window -->
+      <div id="chat-window" class="chat-window">
+        <div id="messages"></div>
+      </div>
+
+      <!-- Chat Input -->
+      <div class="chat-input">
+        <input 
+          type="text" 
+          id="user-input" 
+          placeholder="Type your question here..." 
+          autocomplete="off"
+        />
+        <button id="send-btn" class="send-btn">
+          <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- JS Files -->
+    <script type="module" src="./js/chat.js"></script>
+  </body>
+</html>
